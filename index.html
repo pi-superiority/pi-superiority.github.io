@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Why I should be Isla's favourite annoyance.</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>The Firedance of Luna</h2>
+    <p>Awake all you who from the lands listen to the evening song. Fireburn, alight the sky, the deepest night arise. Luna, luna, luna, luna, luna, luna, luna, luna, zah, zah bah dah bah, zah, zah bah dah bah, zah, bah lah bah lah bah bah Luna. Mighty Luna, sing out to Luna, sing, sing, sing. Move the magic into the music. Luna! Sing oh sing oh sing, powerful Luna, dance the night away Luna WOW! Zah bah dah sha ta ka zah bah dah sha ta ka ta ka Luna, Luna, sing out to Luna, za bah dah sha beautiful Luna. Za ba da sha ta ka, za ba da sha ta ka ta ka ya! Luna, luna, dance out to Luna, za ba da sha, powerful Luna, za ba da sha ta ka za ba da sha ta ka ta ka ya! Let the world be filled with desire, oh magical Luna, light our fire. Through the deepest nights that appear you save all from fear of dark and grey. Luna, Luna, Luna, Luna, ya! Sha ba ta ka, sha ba ta ka ya ya ya. la Luna! Sha ba ta ka, sha ba ta ka ya! Mighty Luna, sing out to Luna, sing, sing, sing! Sha ta ka leh ya sha ba da leh la ya! WOW! Sing oh sing oh sing powerful Luna, dance the night away Luna. Ah, ah, ah, ah, ah, ah, ah. Show us, Luna, shine your light and power. Trust our eyes to see. Beauty, glory, and enchanting mystery, magic beams. It begins! Sha la ta ka yo leh yo leh sha la ta ka yo sha la ya sha la ya sha ta ka ta ka ya! </p>
+    <iframe width="427" height="240" src="https://www.youtube.com/embed/Dfh6hY9LbIg" title="The fire dance of luna" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>See, annoying isn't it!?!?!?</p>
+  </div>
+  
+  <div class="column">
+    <h2>Why I'm good at being an annoyance</h2>
+    <ul>I don't know lots of things</ul>
+    <ul>I am also curious</ul>
+    <ul>This means I ask lots of questions</ul>
+    <ul>Isla knows lots of things</ul>
+    <ul>Isla wants everyone to know lots of things</ul>
+    <ul>Isla has a LOT of patience</ul>
+    <ul>This means they are the perfect person to ask lots of questions</ul>
+    <ul>Isla starts pretending to be annoyed after 3 questions they deem stupid</ul>
+    <ul>Isla starts actually being annoyed after 15 questions they deem stupid</ul>
+    <ul>I don't ask more than 10 questions in a row, in case they seem stupid</ul>
+    <ul>Sometimes, when they are tired, or they have had to talk to too many people, or it is too noisy, Isla isn't in as much of a good mood anymore</ul>
+    <ul>When Isla isn't in a good mood, they have less patience</ul>
+    <ul>This means they can sometimes only cope with 5 annoying questions before running out of patience</ul>
+    <ul>I try not to ask annoying questions when Isla is tired, or they have had to talk to lots of people, or it is too noisy</ul>
+    <ul>This is shown by the graph below</ul>
+    <img src="graph.jpg" alt="as Isla's mood increases, I ask more questions">
+  </div>
+  
+  <div class="column">
+    <h2>Ok sure but...</h2>
+    <p>But what? I'm very good at being annoying. Thanks for coming to my TED talk.</p>
+    <p><i>What about Isla?</i></p>
+    <p>What do you mean what about Isla?</p>
+    <p><i>Are they YOUR favourite annoyance?</i></p>
+    <p>No, they're not annoying. They're my best friend.</p>
+    <p><i>Why?</i></p>
+    <p>Well...</p>
+    <ul>They put up with me. I'm a bit of annoyance.</ul>
+    <p><i>No shit Sherlock.</i></p>
+    <p>Wow, thanks.</p>
+    <p><i>And only a bit?</i></p>
+    <p>OMG Shut up and let me talk, this was your idea!!!</p>
+    <p>Thanks. So getting back to this...</p>
+    <ul>They understand how my brain works. Somehow they know that spinny windy thing means wind turbine. That's impressive!</ul>
+    <p><i>So that's what that means!</i></p>
+    <p>OMG shut up</p>
+    <ul>They will tell me what 4 x 6 is with no hesitation. The 'Oh my god Mhairi you're getting worse!' waits until I have the answer. What if I needed it for something important after all?</ul>
+    <p><i>As if it's EVER been important</i></p>
+    <p>That's beside the point</p>
+  </div>
+</div>
+
+</body>
+</html>
